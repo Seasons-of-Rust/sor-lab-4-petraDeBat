@@ -1,4 +1,4 @@
-/* 
+/*
 May 19, 2022
 Notes for me:
 
@@ -14,7 +14,7 @@ that is one of several possible variants
 
 */
 
-use core::time; 
+use core::time;
 use std::thread;
 
 use rand::Rng;
