@@ -1,3 +1,19 @@
+/*
+May 19, 2022
+Notes for me:
+
+use is like import
+
+pub is short for public
+
+crate is a compilation unit
+
+An enum in Rust is a type that represents data
+that is one of several possible variants
+
+
+*/
+
 use core::time;
 use std::thread;
 
@@ -11,6 +27,10 @@ mod strings;
 
 pub enum FightResult {
     // TODO: Add variants for win, loss, tie, and draw
+    Win,
+    Loss,
+    Tie,
+    Draw,
 }
 
 fn main() {

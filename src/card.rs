@@ -11,7 +11,26 @@ pub struct Card {
 
 impl Card {
     pub fn fight(&self, other: &Card) -> FightResult {
-        todo!()
+        // LOL what happens when I don't read all of the instructions beforehand
+        // if self.damage >= other.health && other.damage >= self.health {
+        //     FightResult::Tie
+        // }
+        // else if self.damage >= other.health {
+        //     FightResult::Win
+        // }
+        // else if other.damage >= self.health {
+        //     FightResult::Loss
+        // }
+        // else {
+        //     FightResult::Draw
+        // }
+
+        match (self.damage >= other.health, other.damage >= self.health) {
+            (true, true) => FightResult::Tie,
+            (true, false) => FightResult::Win,
+            (false, true) => FightResult::Loss,
+            (false, false) => FightResult::Draw,
+        }
     }
 
     /// Give a play by play of the battle
